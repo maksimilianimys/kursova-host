@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tattoo Salon</title>
+
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <nav class="header-navigation-bar">
+            <ul class="header-navigation-bar-left">
+                <li><a href="#Home-page">HOME PAGE</a></li>
+                <li><a href="#Portfolio">PORTFOLIO</a></li>
+                <li><a href="#About_Us">ABOUT US</a></li>
+            </ul>
+
+            <button class="header-navigation-bar-center-button">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svg-path-center-button"
+                          d="M35 0L47.6219 22.3781L70 35L47.6219 47.6219L35 70L22.3781 47.6219L0 35L22.3781 22.3781L35 0Z"
+                          fill="#DB9F6A"/>
+                </svg>
+            </button>
+
+            <button class="header-navigation-bar-mobile-open-button" id="burger-open">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.0001 8.33334C16.5524 8.33334 17.0001 8.78106 17.0001 9.33334L17.0001 22.6667C17.0001 23.219 16.5524 23.6667 16.0001 23.6667C15.4478 23.6667 15.0001 23.219 15.0001 22.6667L15.0001 9.33334C15.0001 8.78106 15.4478 8.33334 16.0001 8.33334ZM21.3334 12.3333C21.8857 12.3333 22.3334 12.7811 22.3334 13.3333V18.6667C22.3334 19.219 21.8857 19.6667 21.3334 19.6667C20.7811 19.6667 20.3334 19.219 20.3334 18.6667V13.3333C20.3334 12.7811 20.7811 12.3333 21.3334 12.3333ZM11.6667 13.3333C11.6667 12.7811 11.219 12.3333 10.6667 12.3333C10.1145 12.3333 9.66675 12.7811 9.66675 13.3333L9.66675 18.6667C9.66675 19.219 10.1145 19.6667 10.6667 19.6667C11.219 19.6667 11.6667 19.219 11.6667 18.6667L11.6667 13.3333Z"
+                          fill="#FFF4EB"/>
+                </svg>
+            </button>
+
+            <ul class="header-navigation-bar-right">
+                <li><a href="#Inquiries">INQUIRIES</a></li>
+                <li><a href="#Pricings">PRICINGS</a></li>
+                <li><a href="#">CHALLENGES</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header-navigation-bar-mobile-burger" id="mobile-menu">
+
+        <button class="header-navigation-bar-mobile-close-button" id="burger-close">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16.0001 8.33334C16.5524 8.33334 17.0001 8.78106 17.0001 9.33334L17.0001 22.6667C17.0001 23.219 16.5524 23.6667 16.0001 23.6667C15.4478 23.6667 15.0001 23.219 15.0001 22.6667L15.0001 9.33334C15.0001 8.78106 15.4478 8.33334 16.0001 8.33334ZM21.3334 12.3333C21.8857 12.3333 22.3334 12.7811 22.3334 13.3333V18.6667C22.3334 19.219 21.8857 19.6667 21.3334 19.6667C20.7811 19.6667 20.3334 19.219 20.3334 18.6667V13.3333C20.3334 12.7811 20.7811 12.3333 21.3334 12.3333ZM11.6667 13.3333C11.6667 12.7811 11.219 12.3333 10.6667 12.3333C10.1145 12.3333 9.66675 12.7811 9.66675 13.3333L9.66675 18.6667C9.66675 19.219 10.1145 19.6667 10.6667 19.6667C11.219 19.6667 11.6667 19.219 11.6667 18.6667L11.6667 13.3333Z"
+                      fill="#FFF4EB"/>
+            </svg>
+        </button>
+
+        <ul class="header-navigation-bar-mobile-menu">
+            <li><a href="#Home-page">Home page</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#About_Us">About us</a></li>
+            <li><a href="#Inquiries">Inquiries</a></li>
+            <li><a href="#Pricings">Pricings</a></li>
+            <li><a href="#">Challenges</a></li>
+        </ul>
+    </div>
+</header>
+
+<main class="main">
+    <section class="main-content-section" id="Home-page">
+        <div class="container">
+
+            <div class="main-content-section-left">
+                <div class="main-content-section-left-title">
+                    <h1>
+                        <span style="color: #FFF4EB;">Body paintings that</span>
+                        <span style="color: #DB9F6A;">Defies</span>
+                        <span style="color: #FFF4EB;">Your Soul</span>
+                    </h1>
+                </div>
+
+                <div class="main-content-section-left-button">
+                    <button data-modal-open>
+                        <img src="images/svg/main-content-section-left/button-form.svg" alt="button-form-svg">
+                        <span>BOOK A VISIT</span>
+                    </button>
+                </div>
+
+                <div class="main-content-section-left-schedule">
+                    <div class="main-content-section-left-schedule-time">
+                        <img src="images/svg/main-content-section-left/clock.svg" alt="clock-svg">
+                    </div>
+
+                    <div class="main-content-section-left-schedule-info">
+                        <div class="main-content-section-left-schedule-info-days">
+                            <p>Mon-Fri</p>
+                            <p>Sat-Sun</p>
+                        </div>
+
+                        <div class="main-content-section-left-schedule-info-hours">
+                            <p>11:00-21:00</p>
+                            <p>14:00-20:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main-content-section-right">
+                <img class="main-content-section-right-background"
+                     src="images/main-content-section-right/background.png"
+                     alt="background-girl">
+                <img class="main-content-section-right-girl" src="images/main-content-section-right/girl.png"
+                     alt="girl">
+
+                <div class="main-content-section-right-element">
+                    <div class="main-content-section-right-element-circle"></div>
+                    <div class="main-content-section-right-element-line"></div>
+
+                    <div class="main-content-section-right-element-text-block">
+                        <div class="main-content-section-right-element-text-block-info">
+                            <p class="main-content-section-right-element-text-block-info-title">Time</p>
+                            <p class="main-content-section-right-element-text-block-info-text">2 Weeks</p>
+                        </div>
+
+                        <div class="main-content-section-right-element-text-block-info">
+                            <p class="main-content-section-right-element-text-block-info-title">Price</p>
+                            <p class="main-content-section-right-element-text-block-info-text"><span
+                                    class="dollar">$ </span>2400.00</p>
+                        </div>
+                    </div>
+
+                    <img class="main-content-section-right-element-vector" src="images/svg/vector.svg" alt="vector">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-content-marquee">
+            <div class="main-content-marquee-section-container">
+                <div class="main-content-marquee-section-container-content marq">
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/layers.svg" alt="Layers">
+                    </div>
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/sisyphus.svg" alt="Sisyphus">
+                    </div>
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/circooles.svg" alt="Circooles">
+                    </div>
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/catalog.svg" alt="Catalog">
+                    </div>
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/quotient.svg" alt="Quotient">
+                    </div>
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/hourglass.svg" alt="Hourglass">
+                    </div>
+                </div>
+                <div aria-hidden="true" class="main-content-marquee-section-container-content marq">
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/layers.svg" alt="Layers">
+                    </div>
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/sisyphus.svg" alt="Sisyphus">
+                    </div>
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/circooles.svg" alt="Circooles">
+                    </div>
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/catalog.svg" alt="Catalog">
+                    </div>
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/quotient.svg" alt="Quotient">
+                    </div>
+                    <div class="main-content-marquee-section-container-content-item">
+                        <img src="images/svg/marquee/hourglass.svg" alt="Hourglass">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="marquee-block">
+            <div class="marquee-block-element">
+                <img src="images/svg/marquee/layers.svg" alt="Layers">
+            </div>
+            <div class="marquee-block-element">
+                <img src="images/svg/marquee/sisyphus.svg" alt="Sisyphus">
+            </div>
+            <div class="marquee-block-element">
+                <img src="images/svg/marquee/circooles.svg" alt="Circooles">
+            </div>
+            <div class="marquee-block-element">
+                <img src="images/svg/marquee/catalog.svg" alt="Catalog">
+            </div>
+            <div class="marquee-block-element">
+                <img src="images/svg/marquee/quotient.svg" alt="Quotient">
+            </div>
+            <div class="marquee-block-element">
+                <img src="images/svg/marquee/hourglass.svg" alt="Hourglass">
+            </div>
+        </div>
+    </section>
+
+    <!--    /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/-->
+
+    <section class="main-content-section-tattoo-club" id="Portfolio">
+        <div class="container">
+            <div class="main-content-section-tattoo-club-grid">
+
+                <div class="main-content-section-tattoo-club-left">
+                    <h2>Tailored Process will make you scream, but then happy!</h2>
+
+                    <img class="main-content-section-tattoo-club-left-image" src="images/tattoo-club/tattoo-artist.png"
+                         width="342"
+                         height="465" alt="tattoo-artist">
+                    <div class="main-content-section-tattoo-club-left-decor"></div>
+                </div>
+
+                <div class="main-content-section-tattoo-club-top">
+                    <img src="images/svg/tattoo-club/bibizyan.svg" alt="bibizyan">
+                    <p><span class="dollar">$</span> 2800.00</p>
+                </div>
+
+                <div class="main-content-section-tattoo-club-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="550" height="145" viewBox="0 0 550 109">
+                        <path d="M.1 54c0 42.2.2 48.9 1.3 45.3 2.9-9.1 8.8-15.7 18.1-20l6-2.8h249c242.6 0 249.1 0 254.5 1.9 7.1 2.5 16.9 12 19.3 18.6 1.4 4.2 1.5 1.5 1.5-43.5 0-26.4-.3-46.9-.7-45.5-2.7 8.9-9 16.3-17.4 20.8l-5.2 2.7h-502L19 28.9C10.2 24.7 4.4 18 1.4 8.5.3 5.2.1 12.6.1 54z"/>
+                    </svg>
+                </div>
+
+                <div class="main-content-section-tattoo-club-bottom">
+                    <img src="images/svg/tattoo-club/snake.svg" alt="snake">
+                    <p><span class="dollar">$</span> 1500.00</p>
+                </div>
+
+                <div class="main-content-section-tattoo-club-right">
+                    <div class="main-content-section-tattoo-club-right-image">
+                        <img src="images/tattoo-club/tattoo-salon.png"
+                             alt='tattoo-salon'>
+                    </div>
+
+                    <div class="main-content-section-tattoo-club-right-elements">
+                        <h2>Highest rated Tatoo Club in the California.</h2>
+                        <p>Don’t hesitate. No one has ever regreted the their tatoos! Contact us now, and
+                            we’ll
+                            help you!</p>
+
+                        <button data-modal-open>CONTACT US NOW</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--    /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/-->
+
+    <section class="main-content-section-reviews" id="About_Us">
+        <div class="container">
+
+            <h2>What Clients say?!</h2>
+
+            <div class="images">
+                <img src="images/swiper/Slide1.png" class="slide-image" alt="Slide 1" tabindex="0">
+                <img src="images/swiper/Slide2.png" class="slide-image" alt="Slide 2" tabindex="0">
+                <img src="images/swiper/Slide3.png" class="slide-image" alt="Slide 3" tabindex="0">
+                <img src="images/swiper/Slide4.png" class="slide-image" alt="Slide 4" tabindex="0">
+                <img src="images/swiper/Slide5.png" class="slide-image" alt="Slide 5" tabindex="0">
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swipe-info">
+                            <h3>Carolina Stones</h3>
+                            <p>I recently had the pleasure of getting a tattoo at Fighting Star, and I couldn't be
+                                happier with the entire experience. From start to finish, everything about this tattoo
+                                shop exceeded my expectations.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swipe-info">
+                            <h3>Carolina Stones</h3>
+                            <p>I recently had the pleasure of getting a tattoo at Fighting Star, and I couldn't be
+                                happier with the entire experience. From start to finish, everything about this tattoo
+                                shop exceeded my expectations.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swipe-info">
+                            <h3>Carolina Stones</h3>
+                            <p>I recently had the pleasure of getting a tattoo at Fighting Star, and I couldn't be
+                                happier with the entire experience. From start to finish, everything about this tattoo
+                                shop exceeded my expectations.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swipe-info">
+                            <h3>Carolina Stones</h3>
+                            <p>I recently had the pleasure of getting a tattoo at Fighting Star, and I couldn't be
+                                happier with the entire experience. From start to finish, everything about this tattoo
+                                shop exceeded my expectations.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swipe-info">
+                            <h3>Carolina Stones</h3>
+                            <p>I recently had the pleasure of getting a tattoo at Fighting Star, and I couldn't be
+                                happier with the entire experience. From start to finish, everything about this tattoo
+                                shop exceeded my expectations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--    /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/-->
+
+    <section class="main-content-section-accordion" id="Inquiries">
+        <div class="container">
+            <div class="accordion">
+
+                <h2>F.A.Q.</h2>
+
+                <div class="container-accordion">
+                    <div class="label first-label" tabindex="0" aria-expanded="false" role="button">
+                        <p>What is the process?</p>
+                    </div>
+
+                    <div class="content">
+                        <p>
+                            Size: Tattoo prices are often based on the size of the tattoo. Larger tattoos
+                            generally cost more than smaller ones. Some salons may charge per square inch or have set
+                            prices
+                            for different size categories. Complexity: The complexity of the design plays a significant
+                            role
+                            in pricing. More intricate and detailed designs typically require more time and skill,
+                            leading
+                            to a higher cost. Color: Tattoos with color typically cost more than black and gray tattoos.
+                            Vibrant colors can require more work and skill to achieve the desired result.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container-accordion">
+                    <div class="label" tabindex="0" aria-expanded="false" role="button">
+                        <p>How you determine price?</p>
+                    </div>
+
+                    <div class="content">
+                        <p>
+                            Size: Tattoo prices are often based on the size of the tattoo. Larger tattoos
+                            generally cost more than smaller ones. Some salons may charge per square inch or have set
+                            prices
+                            for different size categories. Complexity: The complexity of the design plays a significant
+                            role
+                            in pricing. More intricate and detailed designs typically require more time and skill,
+                            leading
+                            to a higher cost. Color: Tattoos with color typically cost more than black and gray tattoos.
+                            Vibrant colors can require more work and skill to achieve the desired result.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container-accordion">
+                    <div class="label" tabindex="0" aria-expanded="false" role="button">
+                        <p>Can you draw any tattoos?</p>
+                    </div>
+
+                    <div class="content">
+                        <p>
+                            Size: Tattoo prices are often based on the size of the tattoo. Larger tattoos
+                            generally cost more than smaller ones. Some salons may charge per square inch or have set
+                            prices
+                            for different size categories. Complexity: The complexity of the design plays a significant
+                            role
+                            in pricing. More intricate and detailed designs typically require more time and skill,
+                            leading
+                            to a higher cost. Color: Tattoos with color typically cost more than black and gray tattoos.
+                            Vibrant colors can require more work and skill to achieve the desired result.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container-accordion">
+                    <div class="label" tabindex="0" aria-expanded="false" role="button">
+                        <p>What is your Location?</p>
+                    </div>
+
+                    <div class="content">
+                        <p>
+                            Size: Tattoo prices are often based on the size of the tattoo. Larger tattoos
+                            generally cost more than smaller ones. Some salons may charge per square inch or have set
+                            prices
+                            for different size categories. Complexity: The complexity of the design plays a significant
+                            role
+                            in pricing. More intricate and detailed designs typically require more time and skill,
+                            leading
+                            to a higher cost. Color: Tattoos with color typically cost more than black and gray tattoos.
+                            Vibrant colors can require more work and skill to achieve the desired result.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer class="footer" id="Pricings">
+    <div class="container">
+
+        <div class="footer-feedback">
+            <div class="footer-feedback-container">
+                <img class="footer-feedback-list" src="images/footer/list.png" alt="list">
+
+                <div class="footer-feedback-form" id="contact-form">
+                    <h2>Subscribe to our <span class="newsletter">Newsletter</span></h2>
+
+                    <form class="footer-feedback-form-email" onsubmit="sendEmail(event)">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email.." required>
+                        <button type="submit" id="subscribe-button">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="subscribe-overlay" id="overlay" style="display: none;">
+                    <p><span class="word">Subscribe </span><span class="word">successful</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-elements">
+            <div class="footer-elements-logo">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svg-path"
+                          d="M35 0L47.6219 22.3781L70 35L47.6219 47.6219L35 70L22.3781 47.6219L0 35L22.3781 22.3781L35 0Z"
+                          fill="#DB9F6A"/>
+                </svg>
+            </div>
+
+            <div class="footer-elements-link">
+                <ul class="footer-elements-link-list-one">
+                    <li><a href="#Home-page">HOME PAGE</a></li>
+                    <li><a href="#Portfolio">PORTFOLIO</a></li>
+                    <li><a href="#About_Us">ABOUT US</a></li>
+                </ul>
+
+                <ul class="footer-elements-link-list-two">
+                    <li><a href="#Inquiries">INQUIRIES</a></li>
+                    <li><a href="#Pricings">PRICINGS</a></li>
+                    <li><a href="#">CHALLENGES</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-elements-social-links">
+                <a href="https://www.youtube.com/" tabindex="0">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.3299 9.24163C31.1488 8.58099 30.7959 7.98289 30.3087 7.51089C29.8079 7.02438 29.194 6.67637 28.525 6.4997C26.0213 5.82512 15.9907 5.82512 15.9907 5.82512C11.809 5.77648 7.62837 5.99039 3.47236 6.46563C2.80337 6.65535 2.19061 7.01114 1.6886 7.50135C1.19533 7.9865 0.838044 8.58477 0.651402 9.24027C0.203053 11.7093 -0.0147857 14.2163 0.0008228 16.7274C-0.015175 19.2363 0.202129 21.7425 0.651402 24.2146C0.834044 24.8674 1.19 25.4629 1.6846 25.944C2.1792 26.4251 2.79511 26.7726 3.47236 26.9565C6.00935 27.6298 15.9907 27.6298 15.9907 27.6298C20.1777 27.6785 24.3636 27.4646 28.525 26.9893C29.194 26.8126 29.8079 26.4646 30.3087 25.9781C30.802 25.497 31.1526 24.8987 31.3286 24.2473C31.7887 21.7792 32.0124 19.2712 31.9965 16.7588C32.0311 14.2357 31.8077 11.7159 31.3299 9.24027V9.24163ZM12.8018 21.3936V12.0626L21.1473 16.7288L12.8018 21.3936Z"
+                              fill="#DB9F6A"/>
+                    </svg>
+                </a>
+
+                <a href="https://x.com/" tabindex="0">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_12_198)">
+                            <path d="M16 0C7.16429 0 0 7.16429 0 16C0 24.8357 7.16429 32 16 32C24.8357 32 32 24.8357 32 16C32 7.16429 24.8357 0 16 0ZM23.6893 12.0607C23.7 12.2286 23.7 12.4036 23.7 12.575C23.7 17.8179 19.7071 23.8571 12.4107 23.8571C10.1607 23.8571 8.075 23.2036 6.31786 22.0786C6.63929 22.1143 6.94643 22.1286 7.275 22.1286C9.13214 22.1286 10.8393 21.5 12.2 20.4357C10.4571 20.4 8.99286 19.2571 8.49286 17.6857C9.10357 17.775 9.65357 17.775 10.2821 17.6143C9.38474 17.432 8.57812 16.9446 7.99934 16.2349C7.42056 15.5253 7.10531 14.6372 7.10714 13.7214V13.6714C7.63214 13.9679 8.25 14.15 8.89643 14.175C8.35301 13.8128 7.90735 13.3222 7.59897 12.7465C7.29059 12.1709 7.12901 11.528 7.12857 10.875C7.12857 10.1357 7.32143 9.46071 7.66786 8.875C8.66394 10.1012 9.9069 11.1041 11.3159 11.8184C12.725 12.5328 14.2686 12.9427 15.8464 13.0214C15.2857 10.325 17.3 8.14286 19.7214 8.14286C20.8643 8.14286 21.8929 8.62143 22.6179 9.39286C23.5143 9.225 24.3714 8.88929 25.1357 8.43929C24.8393 9.35714 24.2179 10.1321 23.3929 10.6214C24.1929 10.5357 24.9643 10.3143 25.6786 10.0036C25.1393 10.7964 24.4643 11.5 23.6893 12.0607Z"
+                                  fill="#DB9F6A"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12_198">
+                                <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/" tabindex="0">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_12_200)">
+                            <path d="M15.9957 10.6644C13.0578 10.6644 10.6602 13.062 10.6602 16C10.6602 18.938 13.0578 21.3356 15.9957 21.3356C18.9336 21.3356 21.3312 18.938 21.3312 16C21.3312 13.062 18.9336 10.6644 15.9957 10.6644ZM31.9982 16C31.9982 13.7905 32.0182 11.601 31.8941 9.39554C31.7701 6.83381 31.1857 4.56027 29.3125 2.68701C27.4352 0.809737 25.1657 0.229345 22.604 0.105261C20.3946 -0.018823 18.2052 0.00119058 15.9997 0.00119058C13.7902 0.00119058 11.6008 -0.018823 9.39536 0.105261C6.83368 0.229345 4.56019 0.813739 2.68696 2.68701C0.809722 4.56427 0.22934 6.83381 0.105259 9.39554C-0.0188226 11.605 0.00119056 13.7945 0.00119056 16C0.00119056 18.2055 -0.0188226 20.399 0.105259 22.6045C0.22934 25.1662 0.813725 27.4397 2.68696 29.313C4.56419 31.1903 6.83368 31.7707 9.39536 31.8947C11.6048 32.0188 13.7943 31.9988 15.9997 31.9988C18.2092 31.9988 20.3986 32.0188 22.604 31.8947C25.1657 31.7707 27.4392 31.1863 29.3125 29.313C31.1897 27.4357 31.7701 25.1662 31.8941 22.6045C32.0222 20.399 31.9982 18.2095 31.9982 16ZM15.9957 24.2095C11.4527 24.2095 7.78631 20.5431 7.78631 16C7.78631 11.4569 11.4527 7.79045 15.9957 7.79045C20.5387 7.79045 24.2051 11.4569 24.2051 16C24.2051 20.5431 20.5387 24.2095 15.9957 24.2095ZM24.5413 9.37152C23.4806 9.37152 22.6241 8.51494 22.6241 7.45423C22.6241 6.39351 23.4806 5.53693 24.5413 5.53693C25.602 5.53693 26.4586 6.39351 26.4586 7.45423C26.4589 7.7061 26.4095 7.95556 26.3133 8.18832C26.217 8.42108 26.0758 8.63256 25.8977 8.81066C25.7196 8.98876 25.5082 9.12998 25.2754 9.22622C25.0426 9.32246 24.7932 9.37184 24.5413 9.37152Z"
+                                  fill="#DB9F6A"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12_200">
+                                <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <ul>
+                <li>Terms & conditions</li>
+                <li>privacy policy</li>
+            </ul>
+
+            <p>
+                © 2024 fIGHTING STAR. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+
+        <div id="modal-window-form">
+            <button type="button" class="modal-window-close-button" data-modal-close>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.0001 8.33334C16.5524 8.33334 17.0001 8.78106 17.0001 9.33334L17.0001 22.6667C17.0001 23.219 16.5524 23.6667 16.0001 23.6667C15.4478 23.6667 15.0001 23.219 15.0001 22.6667L15.0001 9.33334C15.0001 8.78106 15.4478 8.33334 16.0001 8.33334ZM21.3334 12.3333C21.8857 12.3333 22.3334 12.7811 22.3334 13.3333V18.6667C22.3334 19.219 21.8857 19.6667 21.3334 19.6667C20.7811 19.6667 20.3334 19.219 20.3334 18.6667V13.3333C20.3334 12.7811 20.7811 12.3333 21.3334 12.3333ZM11.6667 13.3333C11.6667 12.7811 11.219 12.3333 10.6667 12.3333C10.1145 12.3333 9.66675 12.7811 9.66675 13.3333L9.66675 18.6667C9.66675 19.219 10.1145 19.6667 10.6667 19.6667C11.219 19.6667 11.6667 19.219 11.6667 18.6667L11.6667 13.3333Z"
+                          fill="#FFF4EB"/>
+                </svg>
+            </button>
+
+            <h2 class="modal-window-title">Tattoo registration</h2>
+
+            <form class="modal-window-form" onsubmit="sendModalEmail(event)">
+                <label class="form-label">
+                    <span class="form-label-text">Your name</span>
+                    <input type="text" class="form-label-input" id="modal_name" required>
+                    <svg class="form-label-input-icon" width="18" height="18" viewBox="0 0 18 18" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3_14078)">
+                            <path d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z"
+                                  fill="#212121"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3_14078">
+                                <rect width="18" height="18" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </label>
+
+                <div class="modal-window-form-select">
+                    <label class="form-label">
+                        <span class="form-label-text">Days</span>
+                        <select class="form-select" id="day_select" required>
+                            <option value="" disabled selected>Select day</option>
+                            <option value="monday">Monday</option>
+                            <option value="tuesday">Tuesday</option>
+                            <option value="wednesday">Wednesday</option>
+                            <option value="thursday">Thursday</option>
+                            <option value="friday">Friday</option>
+                            <option value="saturday">Saturday</option>
+                            <option value="sunday">Sunday</option>
+                        </select>
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label-text">Work hours</span>
+                        <select class="form-select" id="hour_select" required>
+                            <option value="" disabled selected>Select hour</option>
+                        </select>
+                    </label>
+                </div>
+
+                <label class="form-label">
+                    <span class="form-label-text">Email</span>
+                    <input type="email" class="form-label-input" id="modal_email" required>
+                    <svg class="form-label-input-icon" width="18" height="18" viewBox="0 0 18 18" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3_14090)">
+                            <path d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM14.7 6.1875L9.3975 9.5025C9.1575 9.6525 8.8425 9.6525 8.6025 9.5025L3.3 6.1875C3.1125 6.0675 3 5.865 3 5.6475C3 5.145 3.5475 4.845 3.975 5.1075L9 8.25L14.025 5.1075C14.4525 4.845 15 5.145 15 5.6475C15 5.865 14.8875 6.0675 14.7 6.1875Z"
+                                  fill="#212121"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3_14090">
+                                <rect width="18" height="18" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </label>
+
+                <label class="form-label">
+                    <span class="form-label-text">Comment</span>
+                    <textarea class="form-label-textarea" id="modal_comment" cols="30" rows="10"
+                              placeholder="Write comment"></textarea>
+                </label>
+
+                <div class="modal-window-form-button">
+                    <button type="submit" id="submit-button">REGISTRATION</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-window-overlay" id="modal-window-overlay" style="display: none;" onclick="closeModal()">
+            <p>Subscribe successful</p>
+        </div>
+    </div>
+</div>
+
+<script src="js/modal.js"></script>
+<script src="js/send-form.js"></script>
+<script src="js/accordion.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/detect-os.js"></script>
+<script src="js/burger.js"></script>
+
+</body>
+</html>
